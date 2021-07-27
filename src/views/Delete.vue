@@ -1,6 +1,16 @@
 <template>
   <router-view/>
-  <p>Olá mundo</p>
+  <div class="header">
+    <p>Almada Car</p>
+  </div>
+  <div>
+    <label for="">
+      Car's ID to delete:
+    </label>
+    <input type="text">
+
+    <button>Delete</button>
+  </div>
 </template>
 
 <script>

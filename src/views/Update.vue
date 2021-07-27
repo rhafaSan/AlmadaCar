@@ -20,7 +20,7 @@
       <label for="">Sell date:</label>
       <input type="text">
 
-      <button>Cadastrar</button>
+      <button>Update</button>
     </form>
   </div>
 </template>
