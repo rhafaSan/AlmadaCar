@@ -13,7 +13,7 @@
     </div>
         <div class="show-car">
       <p>Show a car</p>
-      <router-link to="/show/:id">Show</router-link>
+      <router-link to="/show-car/">Show</router-link>
     </div>
         <div class="update-car">
       <p>Update a car registered</p>

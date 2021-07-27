@@ -1,5 +1,6 @@
 <template>
-  <div class="header">
+  <router-view/>
+   <div class="header">
     <p>Almada Car</p>
   </div>
   <div class="div-form">
@@ -26,32 +27,10 @@
 
 <script>
 export default {
-  name: 'Register'
+  name: 'Update'
 }
 </script>
 
 <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .header{
-    border: 1px solid #000;
-    height: 90px;
-    background-color: #000;
-  }
 
-  .header p{
-    text-align: center;
-    color: #fff;
-    padding-top:20px;
-    font-size: 35px;
-    font-weight: 700;
-  }
-
-  .div-form form{
-    display: flex;
-    flex-direction: column;
-  }
 </style>
