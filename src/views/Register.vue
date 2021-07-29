@@ -14,10 +14,10 @@
       <input type="text" v-model="this.manufacture_year" >
 
       <label for="">Model year:</label>
-      <input type="text" v-model="model_year" >
+      <input type="text" v-model="this.model_year" >
 
       <label for="">Sell date:</label>
-      <input type="text" v-model="date_sale" >
+      <input type="text" v-model="this.date_sale" >
 
       <button type="submit">Cadastrar</button>
     </form>

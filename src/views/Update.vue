@@ -3,10 +3,10 @@
    <div class="header">
     <p>Almada Car</p>
   </div>
-  <div class="div-form">
+  <div class="div-form" @submit="updateCar" >
     <form action="">
       <label for="">Name:</label>
-      <input type="text">
+      <input type="text" value={{this.name}}>
 
       <label for="">Brand:</label>
       <input type="text">
@@ -26,8 +26,28 @@
 </template>
 
 <script>
+import api from '@/services/config.js'
+
 export default {
-  name: 'Update'
+  name: 'Update',
+  data(){
+    return{
+      selectedCar: null,
+      name: null
+    }
+  },
+  methods: {
+    async getCar(){
+      const response = await api.get(`/carro/${this.$route.params.id}`);
+      const data = JSON.parse(response.data)
+      this.name = data.name
+      console.log(this.name)
+      console.log(response.data)
+    },
+  },
+  mounted(){
+    this.getCar()
+  }
 }
 </script>
 

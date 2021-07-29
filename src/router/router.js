@@ -28,17 +28,17 @@ const router = createRouter({
     },
     {
       name: 'ShowCar',
-      path: '/show-car/',
+      path: '/show-car/:id',
       component: ShowCar
     },
     {
       name: 'Update',
-      path: '/update/',
+      path: '/update/:id',
       component: Update
     },
     {
       name: 'Delete',
-      path: '/delete/',
+      path: '/delete/:id',
       component: Delete
     }
   ]
