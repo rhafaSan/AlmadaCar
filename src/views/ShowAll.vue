@@ -61,8 +61,23 @@
 </template>
 
 <script>
+import api from '@/services/config.js';
 export default {
-  name: 'ShowAll'
+  name: 'ShowAll',
+  data(){
+    return {
+      cars: []
+    }
+  },
+  methods: {
+    async getAllCars(){
+      const response = await api.get('/carro/');
+      console.log(response.data);
+    }
+  },
+  mounted(){
+    this.getAllCars();
+  }
 }
 </script>
 
